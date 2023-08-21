@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Product A",
+    "description": "Description A",
+    "category": "electronics",
+    "price": 10.99
+  },
+  {
+    "title": "Product B",
+    "description": "Description B",
+    "category": "apartments",
+    "price": 20.99
+  },
+  {
+    "title": "Product C",
+    "description": "Description C",
+    "category": "cars",
+    "price": 30.99
+  }
+]

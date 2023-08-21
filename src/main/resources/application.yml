@@ -1,0 +1,49 @@
+springdoc:
+    api-docs:
+        path: /api-docs
+    swagger-ui:
+        enabled: true
+        path: /swagger-ui.html
+categoryattributemap:
+  map:
+    cars:
+      - name: color
+        type: string
+      - name: model
+        type: string
+      - name: year
+        type: string
+      - name: km
+        type: string
+      - name: manufacturer
+        type: string
+    apartments:
+      - name: assetType
+        type: list
+        valueList:
+          - apartment
+          - vila
+          - do
+      - name: saleMethod
+        type: list
+        valueList:
+          - sale
+          - rent
+      - name: roomNumber
+        type: string
+      - name: size
+        type: string
+    electronics:
+      - name: productType
+        valueList:
+         - fridge
+         - tv
+         - pc
+         - smartPhone
+         - drone
+         - booster
+      - name: wasInUse
+        type: list
+        valueList:
+          - true
+          - false
