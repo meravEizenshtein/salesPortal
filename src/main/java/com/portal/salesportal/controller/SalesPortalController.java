@@ -3,6 +3,7 @@ package com.portal.salesportal.controller;
 import com.portal.salesportal.controller.dto.ProductDto;
 import com.portal.salesportal.model.AdditionalAttributes;
 import io.swagger.v3.oas.annotations.Operation;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
@@ -38,9 +39,13 @@ public interface SalesPortalController {
     @Operation(summary = "update specific product")
     public ProductDto updateProduct(@RequestBody ProductDto productDto);
 
-    @DeleteMapping("/product/{id}")
+    @RequestMapping(
+            value = "/product/{id}",
+            method = RequestMethod.DELETE,
+            produces = {MediaType.APPLICATION_JSON_VALUE}
+    )
     @Operation(summary = "delete a product")
-    public String deleteProduct(@PathVariable String id);
+    public void deleteProduct(@PathVariable String id);
 
     @GetMapping("/product/category")
     @Operation(summary = "get Categories")

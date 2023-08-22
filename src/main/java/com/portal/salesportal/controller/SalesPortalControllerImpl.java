@@ -47,8 +47,8 @@ public class SalesPortalControllerImpl implements SalesPortalController{
     }
 
     @Override
-    public String deleteProduct(@PathVariable String id) {
-        return salesPortalService.deleteProduct(id);
+    public void deleteProduct(@PathVariable String id) {
+         salesPortalService.deleteProduct(id);
     }
 
     @Override

@@ -1,18 +1,15 @@
 package com.portal.salesportal.controller.dto;
 
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import com.portal.salesportal.model.AdditionalAttributes;
-import com.portal.salesportal.model.ContactData;
 import com.portal.salesportal.model.enums.SaleMethod;
 import com.portal.salesportal.validation.ValidCategory;
+import jakarta.validation.constraints.NotEmpty;
 import lombok.Data;
 
-import jakarta.validation.constraints.NotEmpty;
 import java.util.List;
 @Data
 public class ProductDto{
-    @JsonProperty(access = JsonProperty.Access.READ_ONLY)
     private String id;
     @NotEmpty(message = "category cannot be empty")
     @ValidCategory
@@ -24,6 +21,6 @@ public class ProductDto{
     private Double price;
     private SaleMethod saleMethod;
     private String picUrl;
-    private ContactData contactData;
+    private String contactPhoneNumber;
     private List<AdditionalAttributes> additionalAttributesList;
 }

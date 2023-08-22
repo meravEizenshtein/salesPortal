@@ -1,10 +1,10 @@
 package com.portal.salesportal.model.entities;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.portal.salesportal.model.AdditionalAttributes;
-import com.portal.salesportal.model.ContactData;
-import com.portal.salesportal.model.enums.SaleMethod;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 
@@ -18,8 +18,7 @@ public class Product {
     private String title;
     private String description;
     private Double price;
-    private SaleMethod saleMethod;
     private String picUrl;
-    private ContactData contactData;
+    private String contactPhoneNumber;
     private List<AdditionalAttributes> additionalAttributesList;
 }

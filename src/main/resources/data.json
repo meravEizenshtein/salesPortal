@@ -1,20 +1,37 @@
 [
   {
-    "title": "Product A",
-    "description": "Description A",
+    "title": "new TV",
+    "description": "new samsung TV with high quality",
     "category": "electronics",
-    "price": 10.99
+    "price": 999.99,
+    "contactPhoneNumber": "0548767876",
+    "additionalAttributesList": [{
+      "name": "productType",
+      "value": "tv"
+    },{
+      "name": "wasInUse",
+      "value": "false"
+    }
+    ]
   },
   {
-    "title": "Product B",
-    "description": "Description B",
+    "title": "apartment to rent",
+    "description": "nice 4 rooms apartments in Tel-Aviv",
     "category": "apartments",
-    "price": 20.99
+    "contactPhoneNumber": "0548964999",
+    "price": 6000000
   },
   {
-    "title": "Product C",
-    "description": "Description C",
+    "title": "Tesla for sale",
+    "description": "selling the nicest Tesla ",
     "category": "cars",
-    "price": 30.99
+    "price": 30.99,
+    "contactPhoneNumber": "0548964888",
+    "additionalAttributesList": [
+      {"name": "color",
+        "value": "black"
+      }
+
+    ]
   }
 ]
